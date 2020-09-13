@@ -1,0 +1,400 @@
+/*fonts:
+font-family: 'Sintony', sans-serif;  TITULO
+font-family: 'Poppins', sans-serif; SUBTITULO*/ 
+
+
+
+@media screen and (min-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+
+
+
+
+/* body */
+body {
+font-family: Tahoma;}
+
+
+
+/*  - NAV - */
+#estiloFlexBox {
+    padding: 1%; 
+    margin: auto;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+    /* observar el área - luego eliminar 
+    border: solid 4px grey;}*/
+
+
+    /* observar el área - luego eliminar 
+nav, header, section, footer {
+    
+    border: solid 0.5px #1B4859;
+    margin: 10px;}
+*/
+
+
+
+    nav ul {
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+            
+        display: flex;}
+
+nav li {
+            flex-grow: 1;
+            flex-shrink: 1;}
+
+nav a {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            font-family: 'Sintony';
+            font-size: 20px;
+            text-decoration: none;
+            color: #EF2E38;
+            text-transform: uppercase }
+              
+nav a:hover {
+            background:#E6AB01;}
+
+              
+nav ul ul {
+            display: none;}
+              
+nav ul ul a {
+            padding: 10px;
+            text-align:center;
+            font-size: 20px;  }
+              
+nav ul li:hover > ul {
+                display: block;  }
+      
+/* menus en NO-index*/
+
+header img {
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+header img:hover {
+    transform: scale(1.1);
+}
+
+
+  
+  
+.carousel {
+
+    padding: 20px;
+}
+
+
+/*
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+
+}
+
+ul li {
+display: inline-block;
+position: relative;
+margin: 2px;
+border: solid 8px #f22636;
+padding: 0px ;
+}
+
+ul li a {
+
+display: block;
+list-style: none;
+text-decoration: none;
+color: #FEFEFE;
+font-family: Sintony;
+font-size: 40px;
+font-weight: bold;
+background-color: #127ba6;
+
+}
+
+ul ul {
+position: absolute;
+display: none;
+}
+
+ul li:hover ul {
+    display:block;}
+
+/* - - Estilos de títulos y párrafos - - */
+
+.tituloPrincipal {
+    font-family: Sintony;
+    font-size: 100px;
+    color: #f22636;
+}
+
+
+.tituloSegundo {
+    font-family: Sintony;
+    font-size: 80px;
+    color: #127ba6 ;
+}
+
+
+.subtitulos {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+    }
+
+
+
+/* - - - */
+
+.indexCursosFlex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    gap: 1%;
+    margin: auto;
+
+
+
+}
+
+
+
+/* - - - */
+
+.parrafosSecciones {
+font-size: 20px;
+color: black;
+text-align: justify;
+}
+
+.fotosNosotrosRojo {
+    border: 5px;
+    border-style: solid;
+    border-color: #f2274c }
+
+.fotosNosotrosAzul {
+    border: 5px;
+    border-style: solid;
+    border-color: #127ba6  }
+
+.fotosNosotrosAmarillo {
+    border: 5px;
+    border-style: solid;
+    border-color: #f2e93f   }
+
+.fotosNosotrosVerde {
+    border: 5px;
+    border-style: solid;
+    border-color: #8ef233   }
+
+/* - - - */
+
+/*
+.tablaCursos {
+    background-image:  url(../images/cursos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 24px;
+    -webkit-text-stroke: 1px red;
+    color: #127ba6; 
+}
+
+table tr td ul li {
+    list-style: none;
+}
+    
+
+table a {
+
+    text-decoration: none;
+    font-size: 20px;
+    -webkit-text-stroke: 1px #127ba6;
+    color: #8ef233 ; 
+}
+*/
+
+
+/* cursos */
+
+.grid-cursos {
+    display: grid;
+    width: 85%;
+    position: relative;
+    left: 60px;
+    grid-template-areas:
+      'ninos ninos ninos ninos ninos'
+      'adultos regulares apoyo examenes verano'
+      'adultos conversacion apoyo examenes verano'
+      'adultos medida apoyo examenes verano';
+    grid-template-columns: 1fr 1.2  5fr 0.75fr 0.75fr 0.75fr;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    padding: 1px;
+  }
+  
+  .grid-cursos > div {
+    
+    text-align: center;
+    padding: 10px ;
+    font-size: 20px;
+    justify-items: center;
+    align-content: center;
+  }
+  
+.item1 { grid-area: ninos; 
+    background-color:    #fca300}
+
+.item2 { grid-area: adultos; 
+    background-color: #4790e7
+}
+
+.item3 { grid-area: regulares; 
+    background-color: #4790e7}
+
+.item4 { grid-area: conversacion; 
+    background-color: #4790e7}
+
+.item5 { grid-area: medida; 
+    background-color: #4790e7}
+
+.item6 { grid-area: apoyo; 
+    background-color: #f02137}
+
+.item7 { grid-area: examenes; 
+    background-color: #023440;
+    color: white;
+
+    }
+
+.item8 { grid-area: verano; 
+    background-color: #f02137;
+}
+
+  
+
+
+
+
+.divCursos {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
+   justify-content: center;
+   align-content: center;
+   align-items:center;
+
+
+}
+
+
+
+
+/* - - - - - */
+
+
+.cursosBusco {
+background-color: #f2e93f ;
+font-family: 'Poppins', sans-serif;
+color: black;
+font-size: 40px;
+text-align: right;
+}
+
+.calendarioCurso { 
+    padding: 10px; 
+    margin: 10px; 
+    border: 2px solid black;
+    width: 550px; 
+    
+
+}
+
+/*  - Whatsapp - */
+
+.consultasWhatsapp {
+    display: block;
+    position: fixed;
+    bottom: 255px;
+    right: 15px;
+    display: inline-block;
+    text-align: right;
+    z-index: 49;
+    cursor: pointer;
+
+   
+
+   
+    
+}
+
+/*  - Acceso - */
+
+.accesoFamilias {
+    text-align: center;
+    background-color: #8ef233 ;
+    font-family: 'Sintony', sans-serif;
+    font-size: 25PX;
+}
+
+
+.accesoProfesores {
+    text-align: center;
+    background-color: #f2e93f  ;
+    font-family: 'Sintony', sans-serif;
+    font-size: 25PX;
+}
+
+
+/*  - Contacto - */
+
+.formularioContacto {
+    text-align: left;
+    background-color: #f2e93f  ;
+    font-family: 'Sintony', sans-serif;
+    font-size: 15PX;
+}
+
+/*  - fotter - */
+
+
+
+
+.footerDireccion {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+
+}
+
+.footerRedes {
+    justify-self: center;
+    align-self: center;
+
+
+   animation-name: redes;
+}
+
+   @keyframes redes {
+ opacity: 0%;
+    }    animation-iteration-count: {10, 10, infinite;
+
+    }

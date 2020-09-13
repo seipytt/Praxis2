@@ -1,0 +1,57 @@
+@import 'colores' ; 
+
+.logoPraxisIndex {
+    display:block;
+    margin:auto;}
+
+
+
+nav a:hover {
+        background:$color-amarillo;
+        text-decoration: none;
+    }
+
+.navMenusNoIndex {
+        width: 70%;
+        position: absolute;
+        right: 10px;
+        top: 10px;  }
+      
+.navUlMenusNoIndex {
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+        
+        display: flex; }
+      
+.navLiMenuNoIndex {
+        flex-grow: 1;
+        flex-shrink: 1;  }
+      
+.navAMenuNoIndex {
+        display: block;
+        text-align: center;
+        padding: 10px;
+      
+        text-decoration: none;  
+    
+       text-transform: uppercase }
+         
+nav ul  li a:hover {
+
+       background:#E6AB01;}
+
+
+
+
+
+footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 18px;
+background-color: $color-celeste }
+
+
+.gMaps {
+        padding: 10px;
+}
