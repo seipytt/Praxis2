@@ -328,17 +328,6 @@ text-align: right;
 
 }
 
-/*  - Whatsapp - */
-
-.consultasWhatsapp {
-    display: block;
-    position: fixed;
-    bottom: 255px;
-    right: 15px;
-    display: inline-block;
-    text-align: right;
-    z-index: 49;
-    cursor: pointer;
 
    
 
