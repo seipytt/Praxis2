@@ -383,7 +383,10 @@ text-align: right;
 }
 
    @keyframes redes {
- opacity: 0%;
-    }    animation-iteration-count: {10, 10, infinite;
+ 0% {opacity: 0; }
+    }    
+@keyframes ani {
+     ani {animation-iteration-count: 10, 10, infinite;}
+}
 
-    }
+    
