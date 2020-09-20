@@ -4,14 +4,6 @@ font-family: 'Poppins', sans-serif; SUBTITULO*/
 
 
 
-@media screen and (min-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-
-
 
 
 /* body */
@@ -138,27 +130,8 @@ ul li:hover ul {
 
 /* - - Estilos de títulos y párrafos - - */
 
-.tituloPrincipal {
-    font-family: Sintony;
-    font-size: 100px;
-    color: #f22636;
-}
 
 
-.tituloSegundo {
-    font-family: Sintony;
-    font-size: 80px;
-    color: #127ba6 ;
-}
-
-
-.subtitulos {
-    list-style: none;
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    
-    }
 
 
 
@@ -333,60 +306,16 @@ text-align: right;
 
    
     
-}
 
 /*  - Acceso - */
 
-.accesoFamilias {
-    text-align: center;
-    background-color: #8ef233 ;
-    font-family: 'Sintony', sans-serif;
-    font-size: 25PX;
-}
-
-
-.accesoProfesores {
-    text-align: center;
-    background-color: #f2e93f  ;
-    font-family: 'Sintony', sans-serif;
-    font-size: 25PX;
-}
 
 
 /*  - Contacto - */
 
-.formularioContacto {
-    text-align: left;
-    background-color: #f2e93f  ;
-    font-family: 'Sintony', sans-serif;
-    font-size: 15PX;
-}
+
 
 /*  - fotter - */
 
-
-
-
-.footerDireccion {
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-
-}
-
-.footerRedes {
-    justify-self: center;
-    align-self: center;
-
-
-   animation-name: redes;
-}
-
-   @keyframes redes {
- 0% {opacity: 0; }
-    }    
-@keyframes ani {
-     ani {animation-iteration-count: 10, 10, infinite;}
-}
 
     

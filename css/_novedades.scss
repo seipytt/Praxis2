@@ -4,12 +4,18 @@
     align-items: center;
     flex-direction: column;
     
+    width: 95%;
+align-content: center;
+padding: 5px;
+
+
   }
   
   .grid-container {
-    columns: 5 200px;
+    columns: 3 200px;
     column-gap: 1.5rem;
-    width: 100%;
+    padding: 25px;
+    width: 90%;
     margin: 0 auto;
     div {
       width: 150px;
@@ -35,3 +41,16 @@
       }
     }
   }
+
+
+
+  section div div div p {
+  font-size: 15px;
+  }
+
+  section p {
+max-width: 500px;
+    margin: auto;
+    padding: 10px;
+  }
+

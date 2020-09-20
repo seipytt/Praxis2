@@ -1,8 +1,8 @@
 @import 'colores' ;
 @import 'whatsapp';
 @import 'novedades';
-
-
+@import 'acceso';
+@import 'footer';
 
 
 .logoPraxisIndex {
@@ -47,7 +47,31 @@ nav ul  li a:hover {
        background:#E6AB01;}
 
 
+.contenedorGral {
+        width: 97%;
+        padding: 5px;;
+        border: solid 1px black;
+        margin: auto;
 
+}
+
+.contenedor2do {
+        width: 98%;
+        padding: 5px;;
+        border: solid 1px black;
+        margin: auto;
+
+}
+
+
+.contenedorP {
+        width: 900px;
+        padding: 5px;;
+        border: solid 1px black;
+        text-align: center;
+        margin: auto;
+
+}
 
 
 footer {
@@ -60,3 +84,54 @@ background-color: $color-celeste }
 .gMaps {
         padding: 10px;
 }
+
+
+.formularioContacto {
+
+        max-width: 500px;
+        padding: 5px;;
+        border: solid 1px black;
+        margin: auto;
+        text-align: left;
+        background-color: $color-celeste;
+        font-family: 'Sintony', sans-serif;
+        font-size: 15PX;
+    }
+
+
+
+    /* whtaspp*/
+
+    
+.consultasWhatsapp {
+        display: block;
+        position: fixed;
+        bottom: 35px;
+        right: 30px;
+        display: inline-block;
+        text-align: right;
+        z-index: 100;
+        cursor: pointer;
+      
+        
+      }
+      
+      .WhatsappConsultas {
+        background: #46AC5C;
+        padding: 20px;
+        display: none;
+        box-sizing: 250px;
+        border: 2px solid black;
+        border-radius: 5%;
+        font-size: 25px;
+        margin: 0 1.5rem 1.5rem 0;
+        position: fixed;
+        bottom: 12%;
+      right: 2%;
+      
+      }
+      
+      .consultasWhatsapp:hover .WhatsappConsultas {
+        display: block;
+      }
+      

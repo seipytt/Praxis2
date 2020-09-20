@@ -1,3 +1,23 @@
+.tituloPrincipal {
+  font-family: Sintony;
+  font-size: 60px;
+  color: #f02137;
+  text-align: center;
+}
+
+.tituloSegundo {
+  font-family: Sintony;
+  font-size: 45px;
+  color: #023440;
+}
+
+.subtitulos {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
 .consultasWhatsapp {
   display: block;
   position: fixed;
@@ -23,14 +43,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 95%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 5px;
 }
 
 .grid-container {
-  -webkit-columns: 5 200px;
-          columns: 5 200px;
+  -webkit-columns: 3 200px;
+          columns: 3 200px;
   -webkit-column-gap: 1.5rem;
           column-gap: 1.5rem;
-  width: 100%;
+  padding: 25px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -64,6 +89,96 @@
   border-radius: 5px;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
+}
+
+section div div div p {
+  font-size: 15px;
+}
+
+section p {
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+}
+
+.acceso {
+  width: 97%;
+  padding: 5px;
+  border: solid 1px black;
+  margin: auto;
+}
+
+.accesoFamilias {
+  text-align: center;
+  background-color: #4790e7;
+  font-family: 'Sintony', sans-serif;
+  font-size: 25PX;
+}
+
+.accesoProfesores {
+  text-align: center;
+  background-color: #f02137;
+  font-family: 'Sintony', sans-serif;
+  font-size: 25PX;
+}
+
+.footerDireccion {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.footerRedes {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.animacionRedes {
+  -webkit-animation-name: redes 2s;
+          animation-name: redes 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.button--pulsating:hover {
+  -webkit-animation: pulsating 1.5s ease-in-out infinite;
+          animation: pulsating 1.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes pulsating {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1.8);
+            transform: scale(1.8);
+  }
+}
+
+@keyframes pulsating {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1.8);
+            transform: scale(1.8);
+  }
 }
 
 .logoPraxisIndex {
@@ -112,6 +227,28 @@ nav ul li a:hover {
   background: #E6AB01;
 }
 
+.contenedorGral {
+  width: 97%;
+  padding: 5px;
+  border: solid 1px black;
+  margin: auto;
+}
+
+.contenedor2do {
+  width: 98%;
+  padding: 5px;
+  border: solid 1px black;
+  margin: auto;
+}
+
+.contenedorP {
+  width: 900px;
+  padding: 5px;
+  border: solid 1px black;
+  text-align: center;
+  margin: auto;
+}
+
 footer {
   display: -ms-grid;
   display: grid;
@@ -123,5 +260,47 @@ footer {
 
 .gMaps {
   padding: 10px;
+}
+
+.formularioContacto {
+  max-width: 500px;
+  padding: 5px;
+  border: solid 1px black;
+  margin: auto;
+  text-align: left;
+  background-color: #4790e7;
+  font-family: 'Sintony', sans-serif;
+  font-size: 15PX;
+}
+
+/* whtaspp*/
+.consultasWhatsapp {
+  display: block;
+  position: fixed;
+  bottom: 35px;
+  right: 30px;
+  display: inline-block;
+  text-align: right;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.WhatsappConsultas {
+  background: #46AC5C;
+  padding: 20px;
+  display: none;
+  -webkit-box-sizing: 250px;
+          box-sizing: 250px;
+  border: 2px solid black;
+  border-radius: 5%;
+  font-size: 25px;
+  margin: 0 1.5rem 1.5rem 0;
+  position: fixed;
+  bottom: 12%;
+  right: 2%;
+}
+
+.consultasWhatsapp:hover .WhatsappConsultas {
+  display: block;
 }
 /*# sourceMappingURL=estilosSCSS.css.map */
