@@ -1,0 +1,68 @@
+.grid-cursos {
+    display: grid;
+    width: 85%;
+    position: relative;
+    left: 60px;
+    grid-template-areas:
+      'ninos ninos ninos ninos ninos'
+      'adultos regulares apoyo examenes verano'
+      'adultos conversacion apoyo examenes verano'
+      'adultos medida apoyo examenes verano';
+    grid-template-columns: 1fr 1.2  5fr 0.75fr 0.75fr 0.75fr;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    padding: 1px;
+  }
+  
+  .grid-cursos > div {
+    
+    text-align: center;
+    padding: 10px ;
+    font-size: 20px;
+    justify-items: center;
+    align-content: center;
+  }
+  
+.item1 { grid-area: ninos; 
+    background-color:    $color-amarillo}
+
+.item2 { grid-area: adultos; 
+    background-color: #4790e7
+}
+
+.item3 { grid-area: regulares; 
+    background-color: #4790e7}
+
+.item4 { grid-area: conversacion; 
+    background-color: #4790e7}
+
+.item5 { grid-area: medida; 
+    background-color: #4790e7}
+
+.item6 { grid-area: apoyo; 
+    background-color: #f02137}
+
+.item7 { grid-area: examenes; 
+    background-color: #023440;
+    color: white;
+
+    }
+
+.item8 { grid-area: verano; 
+    background-color: #f02137;
+}
+
+  
+
+
+.divCursos {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
+   justify-content: center;
+   align-content: center;
+   align-items:center;
+
+
+}

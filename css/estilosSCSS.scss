@@ -1,15 +1,63 @@
-@import 'colores' ;
+@import 'coloresYformatos' ;
 @import 'whatsapp';
 @import 'novedades';
 @import 'acceso';
 @import 'footer';
+@import 'cursos';
 
 
 .logoPraxisIndex {
     display:block;
     margin:auto;}
 
+/* Nav*/
 
+nav ul {
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+            
+        display: flex;}
+
+nav li {
+            flex-grow: 1;
+            flex-shrink: 1;}
+
+nav a {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            font-family: 'Sintony';
+            font-size: 20px;
+            text-decoration: none;
+            color: $color-rojo;
+            text-transform: uppercase }
+              
+nav a:hover {
+            background:$color-amarillo;}
+
+              
+nav ul ul {
+            display: none;}
+              
+nav ul ul a {
+            padding: 10px;
+            text-align:center;
+            font-size: 20px;  }
+              
+nav ul li:hover > ul {
+                display: block;  }
+      
+/* menus en NO-index*/
+
+header img {
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+header img:hover {
+    transform: scale(1.2);
+}
 
 nav a:hover {
         background:$color-amarillo;
@@ -44,7 +92,7 @@ nav a:hover {
          
 nav ul  li a:hover {
 
-       background:#E6AB01;}
+       background:$color-amarillo}
 
 
 .contenedorGral {
@@ -74,17 +122,27 @@ nav ul  li a:hover {
 }
 
 
+/* carousel*/
+
+.carousel {
+
+        padding: 18px;
+    }
+    
+
 footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         font-size: 18px;
 background-color: $color-celeste }
 
-
+/* Maps*/
 .gMaps {
         padding: 10px;
 }
 
+
+/* contacto*/
 
 .formularioContacto {
 
